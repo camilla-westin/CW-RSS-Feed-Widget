@@ -2,6 +2,12 @@
 
  //Import RSS feed 
         if(function_exists('fetch_feed')) {
+          include_once(ABSPATH . WPINC . '/feed.php');
+
+          add_filter( 'wp_feed_cache_transient_lifetime', 
+          create_function( '$a', 'return 7200;' ) ); // Sets cache time to 2 hours instead of default 12
+
+          
           $feed = fetch_feed($rssfeedurl); // specify the source feed
           $limit = $feed->get_item_quantity($rsspostcount); // specify number of items
           $items = $feed->get_items(0, $limit); // create an array of rss items
