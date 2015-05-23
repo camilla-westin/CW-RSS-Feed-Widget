@@ -14,9 +14,9 @@
 
         <li class="rss-feed-listitem">
             <div class="rss-feed-article-link">
-              <a href="<?php echo $item->get_permalink(); ?>" title="<?php echo $item->get_date('j F Y @ g:i a'); ?>">
+              <h3><a href="<?php echo $item->get_permalink(); ?>" title="<?php echo $item->get_date('j F Y @ g:i a'); ?>">
                 <?php echo $item->get_title(); ?>
-              </a>
+              </a></h3>
             </div>
         
             <div class="rss-feed-article-desc">
