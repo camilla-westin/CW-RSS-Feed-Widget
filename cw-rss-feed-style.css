@@ -1,5 +1,10 @@
 .cw-rss-widget {}
-.rss-feed-list {}
-.rss-feed-listitem {}
-.rss-feed-article-link {}
-.rss-feed-article-desc {color: red;}
+ul.rss-feed-list {
+	list-style: none;
+	padding: 0;
+}
+
+li.rss-feed-listitem {padding: 20px 0px;}
+.rss-feed-article-link {padding: 10px 0px;}
+.rss-feed-article-desc {padding: 10px 0px;}
+.rss-feed-article-desc img {padding-bottom: 10px;}
