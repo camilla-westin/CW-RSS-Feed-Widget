@@ -89,7 +89,7 @@ function widget($args, $instance) {
             echo $before_title . $title . $after_title;
          }
 
-     echo '<div class="cw-rss-widget>';
+     echo '<div class="cw-rss-widget">';
      echo '<ul class="rss-feed-list">';
         
       //Import and loop rss feed
